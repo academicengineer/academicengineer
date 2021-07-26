@@ -17,8 +17,16 @@ sh cuda_11.0.2_450.51.05_linux.run
 
 # gdmの停止と再起動
 systemctl stop gdm.service
-reboot
+ps aux | grep gdm
+kill -9 PID
 
 # K760に対応するcuda-11用のドライバのダウンロード
 sh https://jp.download.nvidia.com/XFree86/Linux-x86_64/470.57.02/NVIDIA-Linux-x86_64-470.57.02.run
-sh 
+sh sh NVIDIA-Linux-x86_64-470.57.02.run
+
+# cuda11の動作確認
+https://note.com/altbridgetech/n/ne5a320213280
+
+# 参考
+https://www.nemotos.net/?p=3176
+https://qiita.com/myoshimi/items/c507d7389f38406383be
