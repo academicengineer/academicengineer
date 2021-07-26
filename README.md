@@ -20,12 +20,23 @@ systemctl disable gdm.service
 ps aux | grep gdm
 kill -9 PID
 
-# 削除
+# 削除と再起動
 rm /tmp/.X0-lock
+reboot
+
+  WARNING: Unable to determine the path to install the libglvnd EGL vendor library config files.  
+           Check that you have pkg-config and the libglvnd development libraries installed, or    
+           specify a path with --glvnd-egl-config-path.
+           
+           DKMS kernel
 
 # K760に対応するcuda-11用のドライバのダウンロード
 sh https://jp.download.nvidia.com/XFree86/Linux-x86_64/470.57.02/NVIDIA-Linux-x86_64-470.57.02.run
 sh sh NVIDIA-Linux-x86_64-470.57.02.run
+
+# gdmの有効と再起動
+systemctl enable gdm.service
+reboot
 
 # cuda11の動作確認
 https://note.com/altbridgetech/n/ne5a320213280
