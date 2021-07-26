@@ -20,6 +20,9 @@ systemctl stop gdm.service
 ps aux | grep gdm
 kill -9 PID
 
+# 削除
+rm /tmp/.X0-lock
+
 # K760に対応するcuda-11用のドライバのダウンロード
 sh https://jp.download.nvidia.com/XFree86/Linux-x86_64/470.57.02/NVIDIA-Linux-x86_64-470.57.02.run
 sh sh NVIDIA-Linux-x86_64-470.57.02.run
