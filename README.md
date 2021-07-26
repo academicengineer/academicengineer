@@ -16,7 +16,7 @@ wget http://developer.download.nvidia.com/compute/cuda/11.0.2/local_installers/c
 sh cuda_11.0.2_450.51.05_linux.run
 
 # gdmの停止と再起動
-systemctl stop gdm.service
+systemctl disable gdm.service
 ps aux | grep gdm
 kill -9 PID
 
