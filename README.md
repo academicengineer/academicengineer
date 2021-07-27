@@ -1,5 +1,5 @@
-# The University of Electro-Commnications 
-- 👋 Hi, I’m @academicengineer Toshiyuki SHIMAZAKI
+# Toshiyuki SHIMAZAKI @ The University of Electro-Commnications 
+- 👋 Hi, I’m @academicengineer
 - 👀 I’m interested in Learning Robotics, Learning Informatics, Learning Technology, Programming Education, and Learning Engineering.
 - 🌱 I’m currently learning at UEC.
 - 💞️ I’m looking to collaborate on ...
